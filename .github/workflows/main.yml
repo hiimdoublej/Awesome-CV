@@ -7,6 +7,10 @@ on:
     paths-ignore:
     - 'examples/*.pdf'
 
+permissions:
+  contents: read                # 'read' access to repository contents
+  pull-requests: write          # 'write' access to pull requests
+
 jobs:
   build:
     runs-on: ubuntu-latest
