@@ -22,13 +22,13 @@ jobs:
       with:
         persistent-credentials: false
         fetch-depth: 0
-    
+
     - name: Specify the Git global safe directory
       run: git config --global --add safe.directory ${GITHUB_WORKSPACE}
 
     - name: Compile
       run: make
-    
+
     - name: Commit files
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -38,6 +38,5 @@ jobs:
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
 
