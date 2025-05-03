@@ -683,6 +683,7 @@
     \ifstrempty{#5}
       {}
       {\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\}
+  \vspace{-0.0mm}
   \end{tabular*}%
 }
 
