@@ -16,10 +16,12 @@
     {Feb. 2026 - Present} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Plan, design and implement features for FastAPI applications.}
-        \item {Leveraged best practices to reduce Docker image build time by 50\% and image size by up to 30\%.}
-        \item {Implemented proper response streaming for an ADK (Agent Development Kit) application to enhance user experience.}
-        \item {Automated daily chores with AI-assisted issue triage.}
+        \item {Engineered backend features end-to-end for an ESG SaaS platform—data models, schema migrations, admin CRUD, and a Gemini-powered expert-recommendation endpoint—with FastAPI and async SQLAlchemy on GCP.}
+        \item {Built and optimized an LLM chatbot service stack (FastAPI, async SQLAlchemy), including an ADK-based async streaming proxy with proper response streaming and task cancellation, conversation rewind, capability injection, daily quota gating, and request-rate monitoring.}
+        \item {Led a platform-wide performance initiative: added cursor-based, server-side pagination across 5 listing routes and a Valkey caching layer on the BFF, reducing build size, image size, and service startup time.}
+        \item {Cut Docker image build time by 50\% and image size by up to 30\% via build best practices, removed custom \texttt{gcloud} installs to speed pipelines, and migrated services to the Taiwan GCP region.}
+        \item {Designed and shipped an article recommendation and feedback subsystem with new ranking logic and response caching to cut recompute cost.}
+        \item {Automated daily operational chores with AI-assisted issue triage, reducing manual ops overhead.}
       \end{cvitems}
     }
 
