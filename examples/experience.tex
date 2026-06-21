@@ -17,8 +17,8 @@
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {Engineered backend features end-to-end for an ESG SaaS platform—data models, schema migrations, and a Gemini-powered expert-recommendation endpoint—with FastAPI and async SQLAlchemy on GCP.}
-        \item {Built and optimized an LLM chatbot service stack (FastAPI, async SQLAlchemy), including an ADK-based async streaming proxy with proper response streaming and task cancellation, conversation rewind, custom tool integration, daily quota gating, and request-rate monitoring.}
-        \item {Led a platform-wide performance initiative: added pagination and a Valkey caching layer on the BFF, reducing build size, image size, and service startup time.}
+        \item {Built and optimized an LLM chatbot service stack (FastAPI, async SQLAlchemy), including an ADK-based streaming proxy with proper SSE streaming, conversation rewind, custom tool integration, daily quota gating, and request-rate monitoring.}
+        \item {Led a platform-wide performance initiative: added pagination and a Valkey caching layer, reducing build size, image size, and service startup time.}
         \item {Drove overall CI/CD improvements: cut Docker image build time by 50\% and image size by up to 30\%, removed custom \texttt{gcloud} installs to speed pipelines, and migrated services to the Taiwan GCP region.}
         \item {Built internal enablement tooling empowering operations teams to self-serve funding management, user provisioning, and operational triggers (e.g., manual email sends).}
         \item {Automated daily operational chores with AI-assisted issue triage, reducing manual ops overhead.}
